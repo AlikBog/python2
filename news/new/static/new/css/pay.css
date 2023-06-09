@@ -1,21 +1,29 @@
 body {
     height: auto;
     width: auto;
-    text-align: center;
-    background-color: #9932CC;
+    text-align: left;
+    background-color: aquamarine;
 }
 
 .pant {
-    height: 500px;
-    width: 800px;
-    background-color: #483D8B;
+    height: 550px;
+    width: 850px;
     display: inline-block;
-    margin: 18px;
-    color: white;
+    margin-left: 18px;
+    margin-right: 18px;
+    margin-bottom: 18px;
     font-size: 20px;
+    background-color: rgb(238, 98, 98);
+    padding-left: 4px;
 }
 
-.t {
-    float: left;
-    margin-left: 15px;
+.btn1 {
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.btn {
+    text-decoration: none;
+    font-size: 25px;
+    margin-left: 525px;
 }

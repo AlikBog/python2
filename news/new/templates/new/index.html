@@ -5,19 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=h1, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'new/css/pay.css' %}">
+    <link href="static\new\css\pay.css" rel="stylesheet" type="text/css">
     <title>Document</title>
 </head>
 <body>
-     
-{% for i in n %}
+    {% for i in context %}
 <div class="pant">
+    <p>{{ i.authors }}</p>
     <p>{{ i.title }}</p>
     <p>{{ i.anons }}</p>
     <p class="t">{{ i.text }}</p>
-    <p><img src="{{ i.img }}" alt="3" height="150px" width="200px"></p>
+    <p><img src="{{ i.img }}" alt="3" height="300px" width="340px"></p>
+    <a class="btn1" href="#">читать более</a>
+    <a class="btn" href="#">читать о авторе</a>
 </div>
-{% endfor %}
+    {% endfor %}
 
 </body>
 </html>
